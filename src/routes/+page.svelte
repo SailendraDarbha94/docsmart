@@ -1,26 +1,52 @@
 <!-- YOU CAN DELETE EVERYTHING IN THIS PAGE -->
+<script>
+	import image from '$lib/assets/paper_reading_machine.png';
+	import logo from '$lib/assets/logo.png';
+	import { INTROTEXT } from '$lib/stores/constantStore';
+	import { LightSwitch } from '@skeletonlabs/skeleton';
+	
+</script>
 
-<div class="w-full h-screen flex justify-center items-center">
-	<div class="space-y-10 text-center flex flex-col items-center">
-		<h2 class="h2">Welcome to Windows.</h2>
-		<!-- Animated Logo -->
-		<figure>
-			<section class="img-bg" />
-			<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="m2.03 4.832l8.147-1.11l.004 7.86l-8.144.046l-.008-6.796Zm8.144 7.655l.006 7.867l-8.144-1.12l-.001-6.8l8.138.053Zm.987-8.91L21.965 2v9.482l-10.804.085v-7.99Zm10.807 8.984L21.965 22l-10.804-1.525l-.015-7.932Z"/></svg>
-		</figure>
-		<!-- / -->
-		<div class="flex justify-center space-x-2">
-			<a
-				class="btn variant-filled"
-				href="/about-us"
-			>
-				More About Us
-			</a>
+<div class="grid grid-cols-12 gap-2">
+	<div class="col-start-2 col-span-10 md:col-span-4">
+		<img src={image} alt="machine reading paper" class="rounded-lg w-full h-full" />
+	</div>
+	<div class="col-start-2 col-span-10 md:col-start-5 md:col-span-6">
+		<div class="">
+			<p>
+				{INTROTEXT[0]}
+			</p>
+			<br />
+			<p>
+				{INTROTEXT[1]}
+			</p>
+			<br />
+			<p>
+				{INTROTEXT[2]}
+			</p>
 		</div>
+	</div>
+	<!-- <div class="col-start-1 col-end-13 lg:col-start-2 lg:col-span-10">
+		<div class="flex w-full justify-around items-start">
+			<div class="md:w-1/3 lg:w-1/3">
+				<div class="p-4">
+					
+				</div>
+			</div>
+
+		</div>
+	</div> -->
+	<div class="col-start-3 col-end-7 ">
+		<a href="/app" class="btn variant-filled-primary">APP</a>
 	</div>
 </div>
 
 <style lang="postcss">
+  	@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
+	p {
+		font-size: 22px;
+		font-family: 'VT323', monospace;
+	}
 	figure {
 		@apply flex relative flex-col;
 	}
@@ -30,8 +56,7 @@
 	}
 	.img-bg {
 		@apply absolute z-[-1] rounded-full blur-[50px] transition-all;
-		animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite,
-			glow 5s linear infinite;
+		animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite, glow 5s linear infinite;
 	}
 	@keyframes glow {
 		0% {

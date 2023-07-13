@@ -13,7 +13,26 @@
 
 <!-- App Shell -->
 {#key data.url}
-	<div in:fly={{ delay: 150, duration: 300, x: 0, y: -300 }} out:fade={{ duration: 150 }}>
-		<slot />
+	<div in:fade={{ delay: 150, duration: 300, x: 0, y: -300 }} out:fade={{ duration: 150 }}>
+		<slot />		
 	</div>
 {/key}
+
+<!-- <style global>
+	body, html {
+		height: initial;
+		overflow:initial;
+	}
+
+	#appShell header {
+		position: relative;
+		/* This bit is tricky. How to calculate it automatically based on content size? */
+		height: 3rem;
+		overflow:initial;
+	}
+
+	.app-bar {
+		position: fixed;
+    	        width: 100%;
+	}
+</style> -->
