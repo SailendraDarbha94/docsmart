@@ -37,7 +37,7 @@
 				message: value
 			});
 		}
-		console.log(value);
+		//console.log(value);
 	});
 
 	let currentTile: number = 0;

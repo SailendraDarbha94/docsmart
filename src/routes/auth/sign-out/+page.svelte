@@ -16,7 +16,7 @@
 		if (error) {
 			console.error(error);
 		}
-        //goto('/review')
+        goto('/')
 	});
 </script>
 
