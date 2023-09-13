@@ -39,6 +39,7 @@
   },
   "type": "module",
   "dependencies": {
-    "@floating-ui/dom": "1.5.2"
+    "@floating-ui/dom": "1.5.2",
+    "@supabase/supabase-js": "^2.33.2"
   }
 }
