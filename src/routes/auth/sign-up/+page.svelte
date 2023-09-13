@@ -57,7 +57,10 @@
 		// 	email,
 		// 	password
 		// });
-
+		if(!error){
+			email = ''
+			toastSignal.update((value) => (value = 'Please check your email'))
+		}
 		isLoading = false;
 	};
 

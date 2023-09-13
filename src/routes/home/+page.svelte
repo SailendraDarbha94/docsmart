@@ -1,13 +1,21 @@
 <script lang="ts">
-    // your script goes here
+	import home from '$lib/assets/home.png';
+	import type { PageData } from './$types';
+	// your script goes here
+    export let data:PageData;
 </script>
 
-<main>
-    <div>We play tooth or dare here !</div>
+<main class="flex h-full p-4">
+    hello {data.user?.email}
 </main>
 
-<style lang="postcss">
-    /* your styles go here */
-</style>
-
 <!-- markup (zero or more items) goes here -->
+
+<style lang="postcss">
+	/* your styles go here */
+	/* .main {
+		background-image: url('/src/lib/assets/home.png');
+		background-position: center;
+		background-size: contain;
+	} */
+</style>
