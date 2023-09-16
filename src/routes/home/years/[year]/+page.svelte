@@ -19,7 +19,7 @@
 <section class="flex flex-col items-center">
 	{#if subjects}
 		{#each subjects as subject}
-			<a href="/home/year/{subject.id}" class="w-4/6 rounded-lg shadow-xl bg-pink-400 m-2 p-4 text-center">
+			<a href="/home/subjects/{subject.id}" class="w-4/6 rounded-lg shadow-xl bg-pink-400 m-2 p-4 text-center">
 				{subject.name}
 			</a>
 		{/each}

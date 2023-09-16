@@ -4,7 +4,7 @@ import supabase from '$utils/supabase';
 import { page } from '$app/stores';
 
 export const load: PageLoad = async ({ params }) => {
-	const { year } = params;
+	const year:string = params.year
 	const { data: subjects, error: err } = await supabase
 		.from('subjects')
 		.select('*')

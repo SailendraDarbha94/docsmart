@@ -118,7 +118,7 @@
 						</svelte:fragment>
 						<p>Home</p>
 					</AppRailAnchor>
-					<AppRailAnchor href="/subjects" name="subjects" value={1} title="subjects">
+					<AppRailAnchor href="/home/subjects" name="subjects" value={1} title="subjects">
 						<svelte:fragment slot="lead">
 							<div class="flex justify-center items-center">
 								<Icon icon="vaadin:tooth" class="w-10 h-12" />
@@ -136,7 +136,7 @@
 					</AppRailAnchor>
 					<!-- --- -->
 					<svelte:fragment slot="trail">
-						<AppRailAnchor href="/settings/profile" title="Account">
+						<AppRailAnchor href="/settings/admin" title="Account">
 							<div class="flex justify-center items-center ">
 								<Icon icon="streamline:interface-user-profile-focus-close-geometric-human-person-profile-focus-user" class="w-12 h-10 " />
 							</div>

@@ -10,7 +10,7 @@
     let answer:string = "Loading...";
 	async function fetchAnswer(param: number) {
 		loading = true;
-		console.log(param);
+		//console.log(param);
 		let { data: answers, error } = await supabase
 			.from('answers')
 			.select('*')
