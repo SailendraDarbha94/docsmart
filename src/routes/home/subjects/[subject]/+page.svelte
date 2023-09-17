@@ -15,7 +15,7 @@
 			.from('answers')
 			.select('*')
 			.eq('question_id', param);
-		console.log(answers, error);
+		//console.log(answers, error);
         if(answers){
             answer = answers[0].answer
         }
