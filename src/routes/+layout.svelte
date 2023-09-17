@@ -12,7 +12,7 @@
 		AppRailTile
 	} from '@skeletonlabs/skeleton';
 	import Icon from '@iconify/svelte';
-	import home from '$lib/assets/home.png'
+	import home from '$lib/assets/home.png';
 	import logo from '$lib/assets/light_logo.png';
 	// Floating UI for Popups
 	import { computePosition, autoUpdate, flip, shift, offset, arrow } from '@floating-ui/dom';
@@ -42,7 +42,7 @@
 
 	let currentTile: number = 0;
 
-	$: currentTile
+	$: currentTile;
 
 	// beforeUpdate(() => {
 	// 	switch(currentTile){
@@ -110,7 +110,7 @@
 						<AppRailAnchor href="/">(icon)</AppRailAnchor>
 					</svelte:fragment> -->
 					<!-- --- -->
-					<AppRailAnchor name="home" title="home" href="/home" >
+					<AppRailAnchor name="home" title="home" href="/home">
 						<svelte:fragment slot="lead">
 							<div class="flex m-0 p-0 justify-center items-center">
 								<Icon icon="iconamoon:home-light" class="w-10 h-12" />
@@ -126,6 +126,16 @@
 						</svelte:fragment>
 						<p>Subjects</p>
 					</AppRailAnchor>
+					{#if data.role === 'ADMIN'}
+						<AppRailAnchor href="/home/admin" name="admin" title="admin">
+							<svelte:fragment slot="lead">
+								<div class="flex justify-center items-center">
+									<Icon icon="ri:admin-line" class="w-12 h-10" />
+								</div>
+							</svelte:fragment>
+							<span>Admin</span>
+						</AppRailAnchor>
+					{/if}
 					<AppRailAnchor href="/settings/profile" name="settings" title="settings">
 						<svelte:fragment slot="lead">
 							<div class="flex justify-center items-center">
@@ -137,8 +147,11 @@
 					<!-- --- -->
 					<svelte:fragment slot="trail">
 						<AppRailAnchor href="/settings/admin" title="Account">
-							<div class="flex justify-center items-center ">
-								<Icon icon="streamline:interface-user-profile-focus-close-geometric-human-person-profile-focus-user" class="w-12 h-10 " />
+							<div class="flex justify-center items-center">
+								<Icon
+									icon="streamline:interface-user-profile-focus-close-geometric-human-person-profile-focus-user"
+									class="w-12 h-10 "
+								/>
 							</div>
 						</AppRailAnchor>
 					</svelte:fragment>
@@ -158,7 +171,5 @@
 	</svelte:fragment>
 </AppShell>
 
-
 <style lang="postcss">
-
 </style>

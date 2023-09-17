@@ -13,6 +13,17 @@ export const load: LayoutLoad = async ({ url }) => {
     const token = await data.session?.access_token
 
 
+    const { data: roles, error: e } = await supabase
+    .from('admins')
+    .select("role")
+    .eq('user_id', user?.id)
+    let role: string;
+    if (roles){
+        role = roles[0].role
+    } else {
+        role = 'BASIC'
+    }
+
     if(data && browser){
         console.log(token)
         localStorage.setItem('token', token as string)
@@ -27,7 +38,8 @@ export const load: LayoutLoad = async ({ url }) => {
 
     return {
         url: url.pathname,
-        user: user
+        user: user,
+        role: role
     }
 
 };
