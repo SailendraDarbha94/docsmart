@@ -6,7 +6,7 @@
 	export let data: PageData;
 </script>
 
-<main class="flex flex-wrap h-full p-4">
+<main class="flex flex-wrap h-full p-4 bg-blue-300 dark:bg-blue-800">
 	<div
 		class="mx-auto w-full md:w-4/6 lg:w-3/6 h-44 sm:h-48 md:h-56 lg:h-80 rounded-lg"
 	>

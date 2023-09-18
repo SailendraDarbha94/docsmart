@@ -64,7 +64,7 @@
 <AppShell>
 	<svelte:fragment slot="header">
 		<!-- App Bar -->
-		<AppBar>
+		<AppBar background="bg-blue-300 dark:bg-blue-800">
 			<svelte:fragment slot="lead">
 				<div class="flex justify-center items-center">
 					<img src={logo} class="block rounded-lg w-10 h-10 hover:bg-white" alt="logo" />
@@ -105,7 +105,7 @@
 	<svelte:fragment slot="sidebarLeft">
 		{#if data.user}
 			<div class="w-30 h-full shadow-lg">
-				<AppRail>
+				<AppRail background="bg-blue-300 dark:bg-blue-800">
 					<!-- <svelte:fragment slot="lead">
 						<AppRailAnchor href="/">(icon)</AppRailAnchor>
 					</svelte:fragment> -->

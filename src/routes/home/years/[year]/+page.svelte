@@ -6,6 +6,7 @@
 	import { error } from '@sveltejs/kit';
 	import typewriter from '$utils/typewriter.js';
 	import Notice from '$components/Notice.svelte';
+	import SubjectCard from '$components/SubjectCard.svelte';
 	interface Subject {
 		created_at: string;
 		id: number;
@@ -28,7 +29,7 @@
 	let loading: boolean = false;
 </script>
 
-<section class="flex flex-col items-center">
+<section class="flex flex-col w-full h-full items-center bg-blue-300 dark:bg-blue-800">
 	<div class="w-full bg-emerald-600 border-black border-2 p-2">
 		<h2 class="h3 text-center dark:text-white text-black">Noticeboard</h2>
 		{#if notices}
@@ -40,14 +41,11 @@
 		{/if}
 	</div>
 	{#if subjects}
-		{#each subjects as subject}
-			<a
-				href="/home/subjects/{subject.id}"
-				class="w-4/6 rounded-lg shadow-xl bg-pink-400 m-2 p-4 text-center"
-			>
-				{subject.name}
-			</a>
-		{/each}
+		<div class="flex flex-row flex-wrap w-full justify-around">
+			{#each subjects as subject}
+				<SubjectCard {subject} />
+			{/each}
+		</div>
 	{/if}
 </section>
 

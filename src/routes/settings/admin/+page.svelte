@@ -76,7 +76,7 @@
 	}
 </script>
 
-<main class="w-full h-full bg-blue-300">
+<main class="w-full h-full bg-blue-300 dark:bg-blue-800">
 	{#if data.user}
 		{#if application}
 			<div class="flex flex-wrap p-2">
@@ -138,13 +138,13 @@
 				</div>
 			</div>
 		{:else}
-			<div class="flex flex-wrap p-2">
+			<div class="flex flex-wrap p-2 dark:bg-blue-800 dark:text-black">
 				<div class="w-full p-2 bg-blue-200">
 					<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Email</label>
 					<p>{data.user.email}</p>
 				</div>
-				<div class="w-full p-2 bg-blue-300">
-					<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Phone</label>
+				<div class="w-full p-2 bg-blue-300 dark:bg-blue-800 dark:text-white">
+					<label for="email" class="block text-gray-700 text-sm font-bold dark:text-white mb-2">Phone</label>
 					{#if data.user.phone?.length != undefined && data.user.phone.length != 0}
 						<p>{data.user.phone}</p>
 					{:else}
@@ -155,8 +155,8 @@
 					<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Status</label>
 					<p>{data.user.role}</p>
 				</div>
-				<div class="w-full p-2 bg-blue-300">
-					<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Created At</label>
+				<div class="w-full p-2 bg-blue-300 dark:bg-blue-800 dark:text-white">
+					<label for="email" class="block text-gray-700 text-sm font-bold mb-2 dark:text-white">Created At</label>
 					<p>
 						<Time timestamp={data.user.created_at} format="dddd @ h:mm A · MMMM D, YYYY" />
 					</p>

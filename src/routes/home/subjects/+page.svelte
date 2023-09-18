@@ -1,14 +1,15 @@
 <script lang="ts">
-	import type { PageData } from './$types';
+	import SubjectCard from '$components/SubjectCard.svelte';
+import type { PageData } from './$types';
 
 	export let data: PageData;
 </script>
 
-<main class="h-full w-full">
+<main class="h-full w-full bg-blue-300 dark:bg-blue-800">
 	<div class="flex flex-wrap justify-around">
 		{#if data}
 			{#each data.subjects as subject}
-				<a class="block card card-hover p-4 m-4 text-center w-full md:w-1/3" href="/home/subjects/{subject.id}">{subject.name}</a>
+				<SubjectCard {subject} />
 			{/each}
 		{:else}
 			<p>No Subjects to show</p>
