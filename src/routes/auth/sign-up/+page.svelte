@@ -48,7 +48,7 @@
 		const { data, error } = await supabase.auth.signInWithOtp({
 			email: email,
 			options: {
-				emailRedirectTo: 'http://localhost:5173/home'
+				emailRedirectTo: 'https://ampdent-sailendradarbha.vercel.app/home'
 			}
 		})
 
