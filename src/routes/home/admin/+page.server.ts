@@ -44,7 +44,7 @@ export const actions: Actions = {
 
         if(data) {
             toastSignal.update(value => value = "Question created")
-            console.log(data)
+            //console.log(data)
             return { questionUpload : false }
         }
 	}

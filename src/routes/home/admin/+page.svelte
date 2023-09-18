@@ -24,10 +24,17 @@
 	<button class="btn variant-filled-success w-full my-2 md:w-1/3 h-20 mx-auto p-2" disabled
 		>Upload Question Paper</button
 	>
-	<button
-		class="btn variant-filled-tertiary w-full my-2 md:w-1/3 h-20 mx-auto p-2"
-		on:click={() => (questionUpload = true)}>Create Question</button
-	>
+	{#if questionUpload}
+		<button
+			class="btn bg-red-500 text-white w-full my-2 md:w-1/3 h-20 mx-auto p-2"
+			on:click={() => (questionUpload = false)}>Cancel</button
+		>
+	{:else}
+		<button
+			class="btn variant-filled-tertiary w-full my-2 md:w-1/3 h-20 mx-auto p-2"
+			on:click={() => (questionUpload = true)}>Create Question</button
+		>
+	{/if}
 
 	{#if questionUpload}
 		<div class="bg-blue-300 dark:bg-blue-800 dark:text-black w-full px-2 md:px-6">
@@ -38,7 +45,7 @@
 
 					<label for="marks" class="block text-gray-700 text-sm font-bold mt-2">Marks</label>
 					<select name="marks" id="marks" class="rounded-md w-40 md:w-80 mx-auto mb-2">
-                        <option value="null">-</option>
+						<option value="null">-</option>
 						<option value="2">2</option>
 						<option value="5">5</option>
 						<option value="10">10</option>
@@ -46,8 +53,12 @@
 
 					{#if subjects && subjects.length > 0}
 						<label for="subject" class="block text-gray-700 text-sm font-bold mt-2">Subject</label>
-						<select name="subject" id="subject" class="w-40 md:w-80 focus:border-none rounded-md mb-2">
-                                <option value="null">-</option>
+						<select
+							name="subject"
+							id="subject"
+							class="w-40 md:w-80 focus:border-none rounded-md mb-2"
+						>
+							<option value="null">-</option>
 							{#each subjects as subject}
 								<option value={subject.id}>{subject.name.toUpperCase()}</option>
 							{/each}
@@ -56,10 +67,9 @@
 						<!-- else content here -->
 					{/if}
 				</fieldset>
-                <div class="w-full text-center">
-                    <input type="submit" class="btn mx-auto variant-filled-tertiary text-black" />
-                </div>
-				
+				<div class="w-full text-center">
+					<input type="submit" class="btn mx-auto variant-filled-tertiary text-black" />
+				</div>
 			</form>
 		</div>
 	{/if}
@@ -69,7 +79,7 @@
 
 <style lang="postcss">
 	/* your styles go here */
-    label {
-        @apply dark:text-white
-    }
+	label {
+		@apply dark:text-white;
+	}
 </style>
