@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Loader from '$components/Loader.svelte';
+	import { toastSignal } from '$lib/store';
 	import supabase from '$utils/supabase';
 	import Icon from '@iconify/svelte';
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
@@ -7,7 +8,7 @@
 	export let data: any;
 	let loading: boolean = false;
 	console.log(data);
-    let answer:string = "Loading...";
+    let answer:string = "No answer exists in database for this question, please create a new one";
 	async function fetchAnswer(param: number) {
 		loading = true;
 		//console.log(param);
@@ -16,9 +17,12 @@
 			.select('*')
 			.eq('question_id', param);
 		//console.log(answers, error);
-        if(answers){
+        if(answers && answers.length > 0){
             answer = answers[0].answer
         }
+		if (error) {
+			answer = error.message
+		}
 		loading = false;
 	}
 </script>

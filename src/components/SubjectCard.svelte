@@ -12,7 +12,7 @@
     export let subject:Subject;
 </script>
 
-<div class="card card-hover w-full md:w-1/3 m-4 dark:bg-blue-300 dark:text-black">
+<div class="card card-hover w-full md:w-2/5 m-4 dark:bg-blue-300 dark:text-black">
     <header class="card-header">
         <h2 class="h3 text-center">{subject.name}</h2>
     </header>
@@ -22,13 +22,13 @@
     <footer class="card-footer flex justify-around">
         <a
             href="/home/subjects/theory/{subject.id}"
-            class="w-4/6 rounded-lg shadow-xl bg-blue-300 dark:bg-blue-800 dark:text-white m-2 p-4 text-center"
+            class="w-2/5 rounded-lg shadow-xl bg-blue-300 dark:bg-blue-800 dark:text-white m-2 p-4 text-center"
         >
             Theory
         </a>
         <a
             href="/home/subjects/practical/{subject.id}"
-            class="w-4/6 rounded-lg shadow-xl bg-blue-300 dark:bg-blue-800 dark:text-white m-2 p-4 text-center"
+            class="w-2/5 rounded-lg shadow-xl bg-blue-300 dark:bg-blue-800 dark:text-white m-2 p-4 text-center"
         >
             Practical
         </a>
