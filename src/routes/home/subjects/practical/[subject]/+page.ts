@@ -6,7 +6,7 @@ import { page } from '$app/stores';
 export const load: PageLoad = async ({ params }) => {
 	const { subject } = params;
 	const { data: questions, error: err } = await supabase
-		.from('questions')
+		.from('quiz')
 		.select('*')
 		.eq('subject_id', Number(subject));
 	if (questions) {

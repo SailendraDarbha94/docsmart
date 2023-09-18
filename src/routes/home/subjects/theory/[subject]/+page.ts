@@ -14,7 +14,7 @@ export const load: PageLoad = async ({ params }) => {
 	}
 	if (questions) {
 		if (questions.length == 0) {
-			throw error(404, { message: 'Fuck Off!' });
+			throw error(404, { message: 'There are no questions to show! Go add some' });
 		}
 	}
 	return { questions }
