@@ -2,8 +2,16 @@
 	import home from '$lib/assets/home.png';
 	import Icon from '@iconify/svelte';
 	import type { PageData } from './$types';
+	import { onMount } from 'svelte';
+	import { redirect } from '@sveltejs/kit';
 	// your script goes here
 	export let data: PageData;
+
+	onMount(() => {
+		if(!data.user){
+			throw redirect(301, "/")
+		}
+	})
 </script>
 
 <main class="flex flex-wrap h-full p-4 bg-blue-300 dark:bg-blue-800">

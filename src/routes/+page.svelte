@@ -2,14 +2,22 @@
 <script lang="ts">
 	import logo from '$lib/assets/main_logo.png';
 	import { INTROTEXT } from '$lib/store';
-
+	import typewriter from '$utils/typewriter.js';
+	import { onMount } from 'svelte';
+	let loaded: boolean = false;
+	onMount(() => (loaded = true));
 	export let data;
 </script>
 
-<div class="container h-full mx-auto flex justify-center items-center">
+<div class="h-full flex flex-wrap w-full bg-blue-300 dark:bg-blue-800 justify-center items-center">
+	{#if loaded}
+		<div in:typewriter={{ speed: 40, delay: 40 }} class="w-full text-center">
+			<p class="h2 my-2 py-2 font-extrabold underline rounded-lg text-clip">
+				Amplify your Dental Knowledge with
+			</p>
+		</div>
+	{/if}
 	<div class="space-y-10 text-center flex flex-col items-center">
-		<h2 class="h2 my-2 py-2 italic font-extrabold underline rounded-lg">Amplify your Dental Knowledge</h2>
-		<!-- Animated Logo -->
 		<figure>
 			<section class="img-bg" />
 			<!-- <svg
@@ -26,7 +34,11 @@
 		</figure>
 		<!-- / -->
 		<div class="flex justify-center space-x-2">
-			<a class="btn variant-filled-secondary dark:variant-filled-primary" href="/auth/sign-up" rel="noreferrer">
+			<a
+				class="btn variant-filled-secondary dark:variant-filled-primary"
+				href="/auth/sign-up"
+				rel="noreferrer"
+			>
 				One click Login
 			</a>
 		</div>

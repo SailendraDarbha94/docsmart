@@ -35,13 +35,13 @@
 		</div>
 	{:else}
 		<div
-			class="m-2 p-2 w-full card card-hover text-center border-2 border-white rounded-lg shadow-xl"
+			class="m-2 p-2 w-full card card-hover text-center border-2 dark:bg-blue-300 dark:text-black border-white rounded-lg shadow-xl"
 		>
 			<p class="mb-2 w-full text-lg">{data.question}</p>
 			<div class="flex flex-wrap justify-around">
 				{#each data.options as option}
 					<button
-						class="w-2/5 btn variant-filled-warning rounded-md my-2 p-2"
+						class="w-2/5 btn variant-filled-warning dark:bg-blue-800 dark:text-white rounded-md my-2 p-2"
 						on:click={() => checkAnswer(option)}
 					>
 						{option.toLowerCase()}
