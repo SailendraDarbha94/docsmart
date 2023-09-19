@@ -41,7 +41,7 @@
 			<div class="flex flex-wrap justify-around">
 				{#each data.options as option}
 					<button
-						class="w-2/5 btn variant-filled-warning dark:bg-blue-800 dark:text-white rounded-md my-2 p-2"
+						class="w-full md:w-2/5 btn variant-filled-warning dark:bg-blue-800 dark:text-white rounded-md my-2 p-2"
 						on:click={() => checkAnswer(option)}
 					>
 						{option.toLowerCase()}

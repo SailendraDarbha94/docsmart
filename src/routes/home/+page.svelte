@@ -19,7 +19,7 @@
 				class="w-2/5 place-self-end text-right border-b-2 border-r-2 border-black rounded-br-lg p-2 m-2"
 			>
 				<a href="/home/years/first" class="">
-					<Icon icon="healthicons:tooth" class="ml-auto h-10 w-10" />
+					<Icon icon="healthicons:tooth" class="ml-auto w-6 h-6 md:h-10 md:w-10" color={'white'} />
 				</a>
 			</div>
 			<div
@@ -27,8 +27,8 @@
 			>
 				<div class="mr-auto flex">
 					<a href="/home/years/second" class="flex">
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
 					</a>
 				</div>
 			</div>
@@ -38,10 +38,10 @@
 			>
 				<div class="flex justify-end">
 					<a href="/home/years/fourth" class="flex">
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
 					</a>
 				</div>
 			</div>
@@ -50,9 +50,9 @@
 			>
 				<div class="mr-auto flex">
 					<a href="/home/years/third" class="flex">
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
-						<Icon icon="healthicons:tooth" class="h-10 w-10" />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
+						<Icon icon="healthicons:tooth" class="w-6 h-6 md:h-10  md:w-10" color={'white'} />
 					</a>
 				</div>
 			</div>
