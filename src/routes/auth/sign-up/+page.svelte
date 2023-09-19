@@ -61,6 +61,11 @@
 			email = ''
 			toastSignal.update((value) => (value = 'Please check your email'))
 		}
+
+		if(error) {
+			email = ''
+			toastSignal.update((value) => value = error.message)
+		}
 		isLoading = false;
 	};
 

@@ -28,7 +28,7 @@
 		toastSignal.update(
 			(value) => (value = `${data.user ? 'Welcome ' + data.user.email : 'Welcome to AmpDent'}`)
 		);
-		console.log(data);
+		//console.log(data);
 	});
 	const toastStore = getToastStore();
 	toastSignal.subscribe((value) => {
