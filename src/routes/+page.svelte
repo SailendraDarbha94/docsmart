@@ -9,7 +9,7 @@
 	export let data;
 </script>
 
-<div class="h-full flex flex-wrap w-full bg-blue-300 dark:bg-blue-800 justify-center items-center">
+<div class="h-full flex flex-wrap w-full dark:bg-blue-800 justify-center items-center">
 	{#if loaded}
 		<div in:typewriter={{ speed: 40, delay: 40 }} class="w-full text-center">
 			<p class="h2 my-2 py-2 font-extrabold underline rounded-lg text-clip">
@@ -43,10 +43,7 @@
 			</a>
 		</div>
 		<div class="space-y-2">
-			<p class="flex p-4 text-justify">{INTROTEXT}</p>
-			<p>Editing the following:</p>
-			<p><code class="code">/src/routes/+layout.svelte</code></p>
-			<p><code class="code">/src/routes/+page.svelte</code></p>
+			<p class="flex p-4 text-justify text-xl italic">{INTROTEXT}</p>
 		</div>
 	</div>
 </div>
@@ -61,20 +58,20 @@
 	}
 	.img-bg {
 		@apply absolute z-[-1] rounded-full blur-[50px] transition-all;
-		animation: pulse 5s cubic-bezier(0, 0, 0, 0.5) infinite, glow 5s linear infinite;
+		animation: pulse 3s cubic-bezier(0, 0, 0, 0.5) infinite, glow 3s linear infinite;
 	}
 	@keyframes glow {
 		0% {
-			@apply bg-primary-400/50;
+			@apply bg-blue-600/100;
 		}
 		33% {
-			@apply bg-secondary-400/50;
+			@apply bg-blue-500/100;
 		}
 		66% {
-			@apply bg-tertiary-400/50;
+			@apply bg-blue-400/100;
 		}
 		100% {
-			@apply bg-primary-400/50;
+			@apply bg-blue-300/100;
 		}
 	}
 	@keyframes pulse {
