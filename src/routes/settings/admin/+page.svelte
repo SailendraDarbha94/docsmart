@@ -25,13 +25,13 @@
 			message = 'Please enter a valid name';
 			toastSignal.update((value) => (value = message));
 		}
-		console.log(full_name, email, phone, role);
+		//console.log(full_name, email, phone, role, data.user?.id);
 
 		const { data: res, error: err } = await supabase
 			.from('admins')
 			.insert([
 				{
-					name: full_name,
+					full_name: full_name,
 					user_id: data.user?.id,
 					phone: phone,
 					role: role
@@ -53,12 +53,12 @@
 	}
 </script>
 
-<main class="w-full h-full bg-blue-300 dark:bg-blue-800">
+<main class="w-full h-full bg-blue-300 text-black dark:bg-blue-800">
 	{#if data.user}
 		{#if application}
 			<div class="flex flex-wrap p-2">
 				<div class="w-full p-2 bg-blue-200">
-					<h3 class="h3 text-center text-black">Admin Application</h3>
+					<h3 class="h3 text-center">Admin Application</h3>
 				</div>
 				<div class="w-full p-2 bg-blue-300">
 					<label for="email" class="block text-gray-700 text-sm font-bold mb-2">Name</label>

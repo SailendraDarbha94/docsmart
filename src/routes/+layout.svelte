@@ -25,6 +25,7 @@
 	initializeStores();
 
 	onMount(() => {
+		console.log(data)
 		toastSignal.update(
 			(value) => (value = `${data.user ? 'Welcome ' + data.user.email : 'Welcome to AmpDent'}`)
 		);
@@ -136,20 +137,20 @@
 							<span>Admin</span>
 						</AppRailAnchor>
 					{/if}
-					<AppRailAnchor href="/settings/profile" name="settings" title="settings">
+					<AppRailAnchor href="/store" name="store" title="store">
 						<svelte:fragment slot="lead">
 							<div class="flex justify-center items-center">
-								<Icon icon="heroicons:cog-6-tooth" class="w-12 h-10" />
+								<Icon icon="mdi:store-cog-outline" class="w-12 h-10" />
 							</div>
 						</svelte:fragment>
-						<span>Settings</span>
+						<span>Store</span>
 					</AppRailAnchor>
 					<!-- --- -->
 					<svelte:fragment slot="trail">
 						<AppRailAnchor href="/settings/admin" title="Account">
 							<div class="flex justify-center items-center">
 								<Icon
-									icon="streamline:interface-user-profile-focus-close-geometric-human-person-profile-focus-user"
+								icon="iconamoon:profile"
 									class="w-12 h-10 "
 								/>
 							</div>
