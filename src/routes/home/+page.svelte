@@ -10,11 +10,11 @@
 
 <main class="flex flex-wrap h-full p-4 bg-blue-300 dark:bg-blue-800">
 	{#if data.user}
-		<div class="mx-auto w-full md:w-4/6 lg:w-3/6 h-44 sm:h-48 md:h-56 lg:h-80 rounded-lg">
+		<div class="md:mx-auto mx-8 sm:mx-4 w-full md:w-4/6 lg:w-3/6 h-44 sm:h-48 md:h-60 lg:h-80 rounded-lg">
 			<img src={home} alt="amplify dentistry" class="w-full h-full rounded-lg" />
 		</div>
 		<div class="w-full md:w-7/12 mx-auto flex flex-wrap justify-center">
-			<h2 class="w-full h2 text-center">Please select the year</h2>
+			<h2 class="w-full h2 text-center">Please select your year</h2>
 			<div
 				class="w-2/5 place-self-end text-right border-b-2 border-r-2 border-black rounded-br-lg p-2 m-2"
 			>
@@ -58,7 +58,7 @@
 			</div>
 		</div>
 	{:else}
-		<a class="card card-hover h-20 m-2 p-4 flex w-full justify-center items-center" href="/auth/sign-up">Sign Up to access the web application</a>
+		<a class="card card-hover h-20 m-2 p-4 flex w-full justify-center items-center" href="/auth/sign-in">Sign Up to access the web application</a>
 	{/if}
 </main>
 

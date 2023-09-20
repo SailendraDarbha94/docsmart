@@ -45,7 +45,7 @@
 			<div class="flex justify-center space-x-2">
 				<a
 					class="btn variant-filled-secondary dark:variant-filled-primary"
-					href="/auth/sign-up"
+					href="/auth/sign-in"
 					rel="noreferrer"
 				>
 					One click Login

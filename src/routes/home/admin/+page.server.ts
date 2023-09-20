@@ -1,4 +1,4 @@
-import type { Actions } from '@sveltejs/kit';
+import { error, type Actions } from '@sveltejs/kit';
 import type { PageServerLoad } from './$types';
 import supabase from '$utils/supabase';
 import { toastSignal } from '$lib/store';
@@ -14,6 +14,9 @@ export const load: PageServerLoad = async () => {
 	let subjects: Subject[] = [];
 	if (subs) {
 		subjects = subs;
+	}
+	if (err) {
+		throw error(500, err.message);
 	}
 	return { subs };
 };

@@ -4,30 +4,7 @@
 	import supabase from '$utils/supabase';
 	import type { PageData } from './$types';
 	import Time, { svelteTime } from 'svelte-time';
-	// your script goes here
 	export let data: PageData;
-
-	// let editing: boolean = true;
-
-	// let phoneNumber: string = '';
-
-	// const updatePhoneNumber = async () => {
-	// 	loading = true;
-	// 	const { data, error: err } = await supabase.auth.updateUser({
-	// 		phone: phoneNumber
-	// 	});
-
-	// 	if (err) {
-	// 		console.error(err);
-	// 		loading = false;
-	// 	}
-
-	// 	if (data) {
-	// 		toastSignal.update((value) => (value = 'Phone number updated'));
-	// 		console.log(data);
-	// 		loading = false;
-	// 	}
-	// };
 
 	const ROLES: string[] = ['BASIC', 'MODERATOR', 'ADMIN'];
 
@@ -43,7 +20,7 @@
 		if (
 			full_name.toLowerCase() == 'ass' ||
 			full_name.toLowerCase() == 'dick' ||
-			full_name.toLowerCase() == 'pussy'
+			full_name.toLowerCase() == 'nigger'
 		) {
 			message = 'Please enter a valid name';
 			toastSignal.update((value) => (value = message));
