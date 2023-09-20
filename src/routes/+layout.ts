@@ -10,6 +10,7 @@ export const load: LayoutLoad = async ({ url }) => {
 	const err = await res.error;
 	const user = await data.session?.user;
 	const token = await data.session?.access_token;
+	console.log(user, token);
 
 	let role: string = 'BASIC'
 
@@ -19,7 +20,7 @@ export const load: LayoutLoad = async ({ url }) => {
 			.select('role')
 			.eq('user_id', user?.id);
 
-		if (roles) {
+		if (roles !== undefined && roles !== null) {
 			role = roles[0].role;
 	    }
     }
