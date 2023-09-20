@@ -25,8 +25,7 @@
 	initializeStores();
 
 	onMount(() => {
-		console.log(data)
-		toastSignal.update(
+				toastSignal.update(
 			(value) => (value = `${data.user ? 'Welcome ' + data.user.email : 'Welcome to AmpDent'}`)
 		);
 		//console.log(data);
