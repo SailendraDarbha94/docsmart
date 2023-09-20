@@ -21,7 +21,10 @@
 		const { data, error } = await supabase.auth.signInWithOtp({
 			email: email
 		});
-
+		
+		if(data){
+			toastSignal.update(value => value = "Please check your email")
+		}
 		console.log(data, error);
 	}
 </script>
