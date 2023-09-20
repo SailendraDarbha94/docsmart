@@ -16,7 +16,6 @@
 
 	async function handleSubmit() {
 		isLoading = true;
-		email = '';
 
 		const { data, error } = await supabase.auth.signInWithOtp({
 			email: email
@@ -30,6 +29,7 @@
 			isLoading = false;
 			toastSignal.update(value => value = error.message)
 		}
+		email = ''
 	}
 </script>
 
