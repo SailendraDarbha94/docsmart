@@ -23,9 +23,13 @@
 		});
 		
 		if(data){
+			isLoading = false;
 			toastSignal.update(value => value = "Please check your email")
 		}
-		console.log(data, error);
+		if(error){
+			isLoading = false;
+			toastSignal.update(value => value = error.message)
+		}
 	}
 </script>
 
