@@ -19,7 +19,7 @@
 	let message: string = 'correct answer!';
 	async function checkAnswer(value: string) {
 		answered = true;
-		if (value.toLowerCase() === data.answer) {
+		if (value.toLowerCase() === data.answer.toLowerCase()) {
 			dispatch('correct');
 		} else {
 			dispatch('wrong');
