@@ -4,7 +4,7 @@ import { browser } from '$app/environment';
 import { redirect } from '@sveltejs/kit';
 import { error } from '@sveltejs/kit';
 
-export const load: LayoutLoad = async ({ url }) => {
+export const load: LayoutLoad = async () => {
 	const res = await supabase.auth.getSession();
 	const data = await res.data;
 	const err = await res.error;
@@ -24,10 +24,10 @@ export const load: LayoutLoad = async ({ url }) => {
 	    }
     }
 
-	if (data && browser) {
-		console.log(token);
-		localStorage.setItem('token', token as string);
-	}
+	// if (data && browser) {
+	// 	console.log(token);
+	// 	localStorage.setItem('token', token as string);
+	// }
 
 	if (err) {
 		throw error(404, { message: 'Yikes!' });
@@ -37,7 +37,6 @@ export const load: LayoutLoad = async ({ url }) => {
 	//cookies.set("token", token as string)
 
 	return {
-		url: url.pathname,
 		user: user,
 		role: role
 	};

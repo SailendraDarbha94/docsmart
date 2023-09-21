@@ -59,7 +59,7 @@
 </div>
 
 <style lang="postcss">
-	figure {
+	/* figure {
 		@apply flex relative flex-col;
 	}
 	figure svg,
@@ -88,5 +88,5 @@
 		50% {
 			transform: scale(1.5);
 		}
-	}
+	} */
 </style>
