@@ -31,7 +31,7 @@
 <div class="flex flex-wrap w-full h-full items-center  p-4">
 	{#if answered}
 		<div class="w-full" in:typewriter={{ speed: 20, delay: 20 }}>
-			<h2 class="h2 text-center">{message}</h2>
+			<h2 class="text-sm p-0 m-0 text-center">{message}</h2>
 		</div>
 	{:else}
 		<div

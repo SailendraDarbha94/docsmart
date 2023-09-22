@@ -2,7 +2,9 @@
 	import Loader from '$components/Loader.svelte';
 	import Quiz from '$components/Quiz.svelte';
 	import supabase from '$utils/supabase';
+	import typewriter from '$utils/typewriter';
 	import Icon from '@iconify/svelte';
+	import penguin from '$lib/assets/penguin.gif';
 	import { Accordion, AccordionItem } from '@skeletonlabs/skeleton';
 
 	// interface Quiz {
@@ -22,10 +24,10 @@
 	// 		marks = marks + 1
 	// 	}
 	// }
-	let marks:number = 0
-	let mistakes:number = 0
-
-	$:marks, mistakes
+	let marks: number = 0;
+	let mistakes: number = 0;
+	let birthdate: string = 'sailendra.darbha@gmail.com';
+	$: marks, mistakes;
 </script>
 
 <div class="flex flex-col w-full h-full items-center bg-blue-300 dark:bg-blue-800">
@@ -37,12 +39,19 @@
 			Mistakes : {mistakes}
 		</div>
 	</div>
-
+	{#if data.user?.email == birthdate && marks == 10}
+		<div in:typewriter={{ speed: 40, delay: 40 }} class="w-full text-center">
+			<p class="h2 my-2 py-2 font-extrabold underline rounded-lg text-clip">
+				Happy Birthday Baby Penguin !
+			</p>
+			<img src={penguin} alt="penguin" class="w-full px-2 rounded-2xl" />
+		</div>
+	{/if}
 	{#if data.questions}
 		{#each data.questions as question}
-		<div class="w-full p-2">
-			<Quiz data={question} on:correct={() => marks++} on:wrong={() => mistakes++} />
-		</div>
+			<div class="w-full p-2">
+				<Quiz data={question} on:correct={() => marks++} on:wrong={() => mistakes++} />
+			</div>
 		{/each}
 	{/if}
 </div>
