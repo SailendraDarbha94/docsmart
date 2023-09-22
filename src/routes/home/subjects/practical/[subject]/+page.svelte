@@ -26,7 +26,7 @@
 	// }
 	let marks: number = 0;
 	let mistakes: number = 0;
-	let birthdate: string = 'sailendra.darbha@gmail.com';
+	let birthdate: string = 'syedruqaiya22@gmail.com';
 	$: marks, mistakes;
 </script>
 
