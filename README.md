@@ -1,7 +1,7 @@
 # create-svelte
 why can i do anything
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
-
+this project is dead time to remove or rollout new besrion maybe a blog for sai
 ## Creating a project
 how  can 
 If you're seeing this, you've probably already done this step. Congrats!
