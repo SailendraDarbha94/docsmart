@@ -1,5 +1,6 @@
 # create-svelte
-why can i do anything
+this repository is going to cleaned out soon and replaced with nuxt js
+
 Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
 this project is dead time to remove or rollout new besrion maybe a blog for sai
 ## Creating a project
