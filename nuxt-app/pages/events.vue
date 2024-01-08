@@ -1,6 +1,7 @@
 <script setup>
     definePageMeta({
-        layout: "custom"
+        layout: "custom",
+        middleware: "custom"
     })
     const { sayHello } = useHello()
 </script>
