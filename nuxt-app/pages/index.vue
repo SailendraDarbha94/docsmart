@@ -1,3 +1,13 @@
+<script setup>
+    import introText from "./data.json"
+</script>
 <template>
-    <div class="font-mono bg-red-300 text-black text-center text-3xl">Hello world</div>
+    <div class="flex flex-col md:flex-row  min-w-full justify-center items-center py-2">
+        <img src="/img/profile.png" alt="profile picture" class="max-w-full">
+        <p class="font-semibold font-mono text-lg m-2 px-2 max-w-full">
+            <span class="block">{{ introText.intro }}</span>
+            <span class="hidden lg:block">{{ introText.outro }}</span>
+        </p>
+    </div>
+    
 </template>

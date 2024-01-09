@@ -1,6 +1,9 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { resolve } from "path"
 export default defineNuxtConfig({
+  app: {
+    pageTransition: { name: 'page', mode: 'out-in' }
+  },
   devtools: { enabled: true },
   alias: {
     assets: "/<rootDir>/assets"
@@ -14,5 +17,5 @@ export default defineNuxtConfig({
       autoprefixer: {},
     },
   },
-  ssr: false
+  ssr: true
 })
