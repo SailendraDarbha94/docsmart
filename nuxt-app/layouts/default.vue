@@ -7,5 +7,8 @@
       <NavbarMobile />
     </div>
     <slot />
+    <div class="hidden md:block">
+      <Footer />
+    </div>
   </div>
 </template>

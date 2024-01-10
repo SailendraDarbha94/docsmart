@@ -17,5 +17,6 @@
             <IconsHome class="h-10 w-10 my-10 hover:cursor-pointer" />
             <!-- <span class="bg-blue-300 my-4 block max-w-sm text-center p-2 rounded-md text-black">Go Home</span> -->
         </NuxtLink>
+        <Certification />
     </div>
 </template>

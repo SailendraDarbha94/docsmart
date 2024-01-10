@@ -3,7 +3,7 @@
 </script>
 
 <template>
-    <nav class="flex justify-between items-center font-mono bg-purple-300 m-2 px-2 py-3 rounded-xl shadow-md shadow-slate-700">
+    <nav class="flex justify-between items-center font-mono bg-slate-200 m-2 px-2 py-3 rounded-xl shadow-md shadow-slate-400">
         <p class="flex font-extrabold justify-around items-center"> Dr<IconsDoctor /> Developer</p>
         <ul>
             <li>
