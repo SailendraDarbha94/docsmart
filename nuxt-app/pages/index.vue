@@ -1,10 +1,14 @@
-<script setup>
+<script lang="ts" setup>
     import introText from "./data.json"
+
+    const imgClicked = ref<boolean>(false)
 </script>
 <template>
-    <div class="flex flex-col md:flex-row  min-w-full justify-center items-center py-2">
-        <img src="/img/profile.png" alt="profile picture" class="max-w-full">
-        <p class="font-semibold font-mono text-lg m-2 px-2 max-w-full">
+    <div class="flex flex-col md:flex-row flex-wrap  min-w-full justify-center items-center py-2">
+
+        <img v-if="imgClicked" src="/img/profile.png" alt="profile picture" class="w-1/2 hover:cursor-pointer p-10" @click="() => imgClicked = !imgClicked">
+        <img v-else src="/img/photo.png" alt="profile picture" class="w-1/2 hover:cursor-pointer p-10" @click="() => imgClicked = !imgClicked">
+        <p class="font-semibold font-mono text-lg px-2 w-1/2">
             <h1 class="typewriter">Hello there, I'm Sailendra Darbha,</h1>
             <span class="block">{{ introText.intro }}</span>
             <span class="hidden lg:block">{{ introText.outro }}</span>

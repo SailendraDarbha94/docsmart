@@ -10,7 +10,7 @@
         <h3 class="text-2xl font-mono">
             Good Days, bad days
         </h3>
-        <button @click="sayHello()">
+        <button @click="sayHello">
             Hello
         </button>
         <NuxtLink to="/">
