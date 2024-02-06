@@ -8,6 +8,11 @@ Make sure to install the dependencies:
 
 ```bash
 
+
+change name to blogfolio
+
+
+
 hdjdsksnn
 # npm
 npm install
