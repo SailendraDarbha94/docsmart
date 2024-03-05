@@ -6,6 +6,8 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 tomorrow clean up the whole repo and create a redwood js application for publishing articles
 
+this thing better be done soon
+
 
 chatgpt summaries
 
