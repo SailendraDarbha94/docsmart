@@ -1,1 +1,0 @@
-export const useToggler = () => useState<boolean>('toggler', () => false)
