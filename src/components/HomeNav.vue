@@ -1,15 +1,12 @@
 <script setup lang="ts">
-import { RouterLink, RouterView } from 'vue-router'
-import HelloWorld from './components/HelloWorld.vue'
-import HomeNav from './components/HomeNav.vue'
+import HelloWorld from './HelloWorld.vue'
 </script>
-
 <template>
-  <!-- <header>
-    <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
+  <header>
+    <img alt="Vue logo" class="logo rounded-full" src="@/assets/dentist.png" width="125" height="125" />
 
     <div class="wrapper">
-      <HelloWorld msg="Sailendra Darbha" />
+      <HelloWorld msg="Dr. Sailendra Darbha" />
 
       <nav>
         <RouterLink to="/">Home</RouterLink>
@@ -17,11 +14,8 @@ import HomeNav from './components/HomeNav.vue'
         <RouterLink to="/certificates">Certificates</RouterLink>
       </nav>
     </div>
-  </header> -->
-  <RouterView name="LeftSideBar" />
-  <RouterView />
+  </header>
 </template>
-
 <style scoped>
 header {
   line-height: 1.5;

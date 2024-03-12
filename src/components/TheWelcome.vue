@@ -1,7 +1,11 @@
 <script setup lang="ts">
 import WelcomeItem from './WelcomeItem.vue'
 import DocumentationIcon from './icons/IconDocumentation.vue'
+import InterfaceIcon from './icons/IconInterface.vue'
 import ToolingIcon from './icons/IconTooling.vue'
+import BookIcon from './icons/IconBook.vue'
+import UpIcon from './icons/IconUp.vue'
+import ThreeIcon from './icons/IconThree.vue'
 import EcosystemIcon from './icons/IconEcosystem.vue'
 import CommunityIcon from './icons/IconCommunity.vue'
 import SupportIcon from './icons/IconSupport.vue'
@@ -14,77 +18,55 @@ import PointerIcon from './icons/IconPointer.vue'
       <!-- <DocumentationIcon /> -->
       <PointerIcon />
     </template>
-    <template #heading>Documentation</template>
+    <template #heading>Front End Nanodegree </template>
+    Got frustrated outta my mind with college and the accompanying shenanigans so took a few years break & 
+    completed a full front-end course co-created by Google and offered by Udacity for a duration of 6 months.
+    <a href="confirm.udacity.com/PAERKPLN" target="_blank" rel="noopener" class="text-yellow-300">click to verify</a>
 
-    Vue’s
-    <a href="https://vuejs.org/" target="_blank" rel="noopener">official documentation</a>
-    provides you with all information you need to get started.
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <ToolingIcon />
+      <!-- <ToolingIcon /> -->
+      <InterfaceIcon />
     </template>
-    <template #heading>Tooling</template>
-
-    This project is served and bundled with
-    <a href="https://vitejs.dev/guide/features.html" target="_blank" rel="noopener">Vite</a>. The
-    recommended IDE setup is
-    <a href="https://code.visualstudio.com/" target="_blank" rel="noopener">VSCode</a> +
-    <a href="https://github.com/johnsoncodehk/volar" target="_blank" rel="noopener">Volar</a>. If
-    you need to test your components and web pages, check out
-    <a href="https://www.cypress.io/" target="_blank" rel="noopener">Cypress</a> and
-    <a href="https://on.cypress.io/component" target="_blank" rel="noopener"
-      >Cypress Component Testing</a
-    >.
-
-    <br />
-
-    More instructions are available in <code>README.md</code>.
+    <template #heading>User Interface Design Specialization</template>
+    My interest in the field of design grew immensely and so I took up a five course specialization 
+    including a capstone project that was taught by esteemed professors at University of Minnesota.
+    <a href="https://coursera.org/share/7e9438f0e4dc65ebf534f0cdbb3e4136" class="text-yellow-300" target="_blank" rel="noopener">click to verify</a>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <EcosystemIcon />
+      <BookIcon />
+      <!-- <EcosystemIcon /> -->
     </template>
-    <template #heading>Ecosystem</template>
+    <template #heading>Bachelors Degree in Dental Surgery</template>
 
-    Get official tools and libraries for your project:
-    <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a>,
-    <a href="https://router.vuejs.org/" target="_blank" rel="noopener">Vue Router</a>,
-    <a href="https://test-utils.vuejs.org/" target="_blank" rel="noopener">Vue Test Utils</a>, and
-    <a href="https://github.com/vuejs/devtools" target="_blank" rel="noopener">Vue Dev Tools</a>. If
-    you need more resources, we suggest paying
-    <a href="https://github.com/vuejs/awesome-vue" target="_blank" rel="noopener">Awesome Vue</a>
-    a visit.
+    Twas about time I went back to my old college and finish what I'd left halfway through, cause I'm not a quitter (<span class="text-green-300">is what I tell myself when it was mostly my mom's nagging that made me do it</span>)
+    <!-- <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a> -->
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <CommunityIcon />
+      <!-- <CommunityIcon /> -->
+      <ThreeIcon />
     </template>
-    <template #heading>Community</template>
-
-    Got stuck? Ask your question on
-    <a href="https://chat.vuejs.org" target="_blank" rel="noopener">Vue Land</a>, our official
-    Discord server, or
-    <a href="https://stackoverflow.com/questions/tagged/vue.js" target="_blank" rel="noopener"
-      >StackOverflow</a
-    >. You should also subscribe to
-    <a href="https://news.vuejs.org" target="_blank" rel="noopener">our mailing list</a> and follow
-    the official
-    <a href="https://twitter.com/vuejs" target="_blank" rel="noopener">@vuejs</a>
-    twitter account for latest news in the Vue world.
+    <template #heading>First Job</template>
+    Thought I was doomed to freelance as companies didn't seem interested in hiring dentists to build websites, but then, got my first break at <a href="https://www.e3next.com/" target="_blank" rel="noopener" class="text-green-300 hover:text-yellow-200">E3Next</a>.
+    A small startup with big clients such as <span class="text-green-300">Albertsons</span> and <span class="text-green-300">UrbanLadder</span>
   </WelcomeItem>
 
   <WelcomeItem>
     <template #icon>
-      <SupportIcon />
+      <!-- <SupportIcon /> -->
+      <UpIcon />
     </template>
-    <template #heading>Support Vue</template>
-
-    As an independent project, Vue relies on community backing for its sustainability. You can help
-    us by
-    <a href="https://vuejs.org/sponsor/" target="_blank" rel="noopener">becoming a sponsor</a>.
+    <template #heading>Second Job</template>
+    The next year was wonderful and terrifying at the same time, cause the lockdowns were gone and
+    there was an actual office to go to with a real coffee machine, but my imposter syndrome peaked cause when you're surrounded
+    by super talented people in a unicorn startup such as
+    <a href="https://blinkit.com/" target="_blank" rel="noopener" class="text-green-300 hover:text-yellow-200">BlinkIT</a>
+    it is a kind of overwhelming that I can't describe here. What I can say is that <span class="text-green-300">I'm ready for the third one 😉</span>
   </WelcomeItem>
 </template>
