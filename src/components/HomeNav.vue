@@ -3,7 +3,7 @@ import HelloWorld from './HelloWorld.vue'
 </script>
 <template>
   <header>
-    <img alt="Vue logo" class="logo rounded-full" src="@/assets/dentist.png" width="125" height="125" />
+    <!-- <img alt="Vue logo" class="logo rounded-full" src="@/assets/dentist.png" width="125" height="125" /> -->
 
     <div class="wrapper">
       <HelloWorld msg="Dr. Sailendra Darbha" />

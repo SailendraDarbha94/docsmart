@@ -32,7 +32,8 @@ const quotesFunction = async () => {
     <h4 class="font-semibold text-pretty">
       You’ve stumbled upon the humble abode of a self-taught developer who also happens to be a
       Dentist, I've been a curious person for as long as I can remember, always trying to soak up
-      knowledge as much as I can, on this journey that we call Life, which I believe is both the
+      knowledge as much as I can, on this wonderfully amazing and incredibly unfair 
+      journey that we call Life, which I believe is both the
       means and an end in itself
     </h4>
     <br />
