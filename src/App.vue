@@ -5,6 +5,10 @@ import HomeNav from './components/HomeNav.vue'
 </script>
 
 <template>
+  <div class="app-home">
+    <RouterView name="LeftSideBar" class="w-1/2" />
+    <RouterView class="w-1/2 max-w-full" />
+  </div>
   <!-- <header>
     <img alt="Vue logo" class="logo" src="@/assets/logo.svg" width="125" height="125" />
 
@@ -18,11 +22,18 @@ import HomeNav from './components/HomeNav.vue'
       </nav>
     </div>
   </header> -->
-  <RouterView name="LeftSideBar" />
-  <RouterView />
 </template>
 
 <style scoped>
+.app-home {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  /* display: grid;
+  grid-template-columns: 1fr 1fr; */
+  /* padding: 0 2rem; */
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
