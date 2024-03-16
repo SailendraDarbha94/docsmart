@@ -2,15 +2,17 @@
 import HelloWorld from './HelloWorld.vue'
 </script>
 <template>
-  <header>
+  <header class="h-full">
     <!-- <img alt="Vue logo" class="logo rounded-full" src="@/assets/dentist.png" width="125" height="125" /> -->
 
-    <div class="wrapper">
+    <div class="">
       <HelloWorld msg="Dr. Sailendra Darbha" />
 
       <nav>
-        <RouterLink to="/">Home</RouterLink>
-        <RouterLink to="/projects">Projects</RouterLink>
+        <!-- <RouterLink to="/">Home</RouterLink> -->
+        <a @click="$emit('home')">Home</a>
+        <a @click="$emit('projects')">Projects</a>
+        <!-- <RouterLink to="/projects">Projects</RouterLink> -->
         <RouterLink to="/certificates">Certificates</RouterLink>
         <RouterLink to="/blog">Blog</RouterLink>
       </nav>
@@ -18,6 +20,12 @@ import HelloWorld from './HelloWorld.vue'
   </header>
 </template>
 <style scoped>
+a:hover {
+  cursor: pointer;
+}
+.wrapper {
+  background-color: aqua;
+}
 header {
   line-height: 1.5;
   max-height: 100vh;
@@ -52,6 +60,11 @@ nav a {
 nav a:first-of-type {
   border: 0;
 }
+header {
+    display: flex;
+    place-items: center;
+    padding-right: calc(var(--section-gap) / 2);
+  }
 
 @media (min-width: 1024px) {
   header {

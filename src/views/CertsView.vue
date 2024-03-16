@@ -2,7 +2,7 @@
 import Certificates from '../components/MyCertificates.vue'
 </script>
 
-<template class="">
+<template>
   <main class="flex w-full p-2 bg-blue-400">
     <Certificates />
   </main>
