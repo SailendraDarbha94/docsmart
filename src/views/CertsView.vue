@@ -3,7 +3,11 @@ import Certificates from '../components/MyCertificates.vue'
 </script>
 
 <template>
-  <main class="flex w-full p-2 bg-blue-400">
+  <main>
+    <nav class="flex justify-center mt-2">
+        <RouterLink to="/" class="mx-2 p-2 w-40 text-center rounded-lg bg-slate-200 text-black hover:text-slate-100">Home</RouterLink>
+        <RouterLink to="/blog" class="mx-2 p-2 w-40 text-center rounded-lg bg-slate-200 text-black hover:text-slate-100">Blog</RouterLink>
+    </nav>
     <Certificates />
   </main>
 </template>
