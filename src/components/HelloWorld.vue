@@ -28,7 +28,7 @@ const quotesFunction = async () => {
 
 <template>
   <div class="">
-    <h1 class="text-green-300">{{ msg }}</h1>
+    <h1 class="dark:text-green-300 text-purple-500">{{ msg }}</h1>
     <h4 class="font-semibold text-pretty">
       You’ve stumbled upon the humble abode of a self-taught developer who also happens to be a
       Dentist, I've been a curious person for as long as I can remember, always trying to soak up

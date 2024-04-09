@@ -24,7 +24,7 @@ import CameraIcon from './icons/IconCamera.vue'
     <template #heading>Photofables</template>
     The first website I ever built was for a photographer named Varun Singh based out of New Delhi who loves to travel
     and explore the world. He has been to Iceland & Japan amongst other places.
-    <a href="confirm.udacity.com/PAERKPLN" target="_blank" rel="noopener" class="text-yellow-300">view repository</a>
+    <a href="https://github.com/darbhasailu94/Varun-Portfolio" target="_blank" rel="noopener" class="dark:text-yellow-300 text-blue-700 hover:bg-transparent">view repository</a>
 
   </WelcomeItem>
 
@@ -37,7 +37,7 @@ import CameraIcon from './icons/IconCamera.vue'
     <template #heading>Pankh.AI</template>
     This is a website that allows users to bring their own data and train custom LLMs that can be deployed 
     on the cloud(self-hosting) or managed by the team at Pankh.AI
-    <a href="confirm.udacity.com/PAERKPLN" target="_blank" rel="noopener" class="text-yellow-300">view repository</a>
+    <a href="confirm.udacity.com/PAERKPLN" target="_blank" rel="noopener" class="dark:text-yellow-300 text-blue-700 hover:bg-transparent">view repository</a>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -48,7 +48,7 @@ import CameraIcon from './icons/IconCamera.vue'
     <template #heading>Amplify Dentistry</template>
     This is my own brainchild that uses OpenAI's APIs under the hood by passing the context
     of a particular textbook and answering the student's doubts using it's context.
-    <a href="https://amplifydentistry.com/" class="text-yellow-300" target="_blank" rel="noopener">view website</a>
+    <a href="https://amplifydentistry.com/" class="dark:text-yellow-300 text-blue-700 hover:bg-transparent" target="_blank" rel="noopener">view website</a>
     <!-- There is also quiz generation on demand and other features as well. -->
     <!-- <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a> -->
   </WelcomeItem>
@@ -61,7 +61,7 @@ import CameraIcon from './icons/IconCamera.vue'
     <template #heading>KSDC Communities</template>
     This is a website for Dentists to find their next Job Opportunities and for Clinics to find
     new talent.
-    <a href="https://ksdc-community.vercel.app/" class="text-yellow-300" target="_blank" rel="noopener">view website</a>
+    <a href="https://ksdc-community.vercel.app/" class="dark:text-yellow-300 text-blue-700 hover:bg-transparent" target="_blank" rel="noopener">view website</a>
   </WelcomeItem>
 
   <WelcomeItem>
@@ -71,6 +71,6 @@ import CameraIcon from './icons/IconCamera.vue'
     </template>
     <template #heading>DekhoBai</template>
     This is the latest idea that I'm currently working on which is a Hyperlocal Online Garage Sale with a bidding system
-    <span class="text-green-300">Not sure about the name though 😉</span>
+    <span class="text-purple-700 dark:text-green-300">Not sure about the name though 😉</span>
   </WelcomeItem>
 </template>

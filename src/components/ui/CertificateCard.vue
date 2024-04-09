@@ -15,7 +15,7 @@ defineProps<Props>()
 <template>
   <div class="card rounded-xl mx-auto my-2">
     <img class="w-full rounded-tl-lg rounded-tr-lg hover:cursor-pointer" v-bind:src=$props.url @click="() => openCertificate($props.url)" />
-    <h3 class="text-center font-semibold text-xl text-yellow-300">{{ $props.title }}</h3>
+    <h3 class="text-center font-semibold text-xl dark:text-yellow-300">{{ $props.title }}</h3>
     <hr />
     <p class="text-justify p-4">{{ $props.description }}</p>
   </div>
