@@ -1,13 +1,17 @@
 <script setup lang="ts">
-import Certificates from '../components/MyCertificates.vue'
+import BlogLink from '@/components/ui/BlogLink.vue';
+
 </script>
 
 <template>
-  <main>
-    <nav class="flex justify-center mt-2 top-0 left-0 fixed w-full shadow-xl pb-2">
-        <RouterLink to="/" class="mx-2 p-2 w-40 text-center rounded-lg text-black hover:bg-transparent bg-yellow-300 font-semibold">Home</RouterLink>
-        <!-- <RouterLink to="/blog" class="mx-2 p-2 w-40 text-center rounded-lg bg-slate-200 text-black hover:bg-yellow-300">Blog</RouterLink> -->
-    </nav>
-    <Certificates />
-  </main>
+  <div class="text-black flex flex-wrap w-screen h-full">
+    <div class="w-3/12 bg-slate-200 m-2 rounded-2xl shadow-2xl">
+      <h1 class="text-center mt-4 font-semibold text-3xl">Blog</h1>
+      <BlogLink link="/" title="diamg" />
+      <BlogLink link="/blah" title="blah" />
+      <BlogLink link="/certificates" title="certs" />
+      <BlogLink link="/certificates" title="certis" />
+      <BlogLink link="/certificates" title="certificates" />
+    </div>
+  </div>
 </template>

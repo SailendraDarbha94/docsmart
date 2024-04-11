@@ -2,7 +2,7 @@
 import HelloWorld from './HelloWorld.vue'
 </script>
 <template>
-  <header class="h-full">
+  <header class="h-full pl-8 py-4">
     <!-- <img alt="Vue logo" class="logo rounded-full" src="@/assets/dentist.png" width="125" height="125" /> -->
 
     <div class="">

@@ -40,7 +40,7 @@ const certificatesArr: Certificate[] = [
 
 <template>
   <div
-    class="w-full h-full p-4 gap-2 flex flex-row flex-wrap justify-between"
+    class="w-full h-full p-4 gap-2 mt-20 flex flex-row flex-wrap justify-between"
   >
     <CertificateCard v-bind:key="certificate.url" v-for="certificate in certificatesArr" v-bind="certificate"  />
   </div>

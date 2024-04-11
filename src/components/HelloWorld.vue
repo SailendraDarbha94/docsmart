@@ -13,6 +13,16 @@ onMounted(async () => {
       }
     }
   )
+  if(isFetching){
+    author.value = 'Fetching...'
+    quote.value = '-Api Ninjas'
+  }
+
+  if(error) {
+    author.value = 'Please try again later!'
+    quote.value = 'Error Occured!'
+  }
+
   if (data) {
     const newData = await JSON.parse(data.value)
     console.log(newData[0])
@@ -27,7 +37,7 @@ const quotesFunction = async () => {
 </script>
 
 <template>
-  <div class="">
+  <div class="w-full">
     <h1 class="dark:text-green-300 text-purple-500">{{ msg }}</h1>
     <h4 class="font-semibold text-pretty">
       You’ve stumbled upon the humble abode of a self-taught developer who also happens to be a
@@ -37,7 +47,7 @@ const quotesFunction = async () => {
       means and an end in itself
     </h4>
     <br />
-    <p class="block text-yellow-300 hover:cursor-pointer" @click="quotesFunction">
+    <p class="block text-blue-700 dark:text-yellow-300 hover:cursor-pointer" @click="quotesFunction">
       <i>
         {{ quote }}
         <span class="inline-block right-0">- {{ author }}</span>

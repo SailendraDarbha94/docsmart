@@ -63,14 +63,20 @@ import CameraIcon from './icons/IconCamera.vue'
     new talent.
     <a href="https://ksdc-community.vercel.app/" class="dark:text-yellow-300 text-blue-700 hover:bg-transparent" target="_blank" rel="noopener">view website</a>
   </WelcomeItem>
-
   <WelcomeItem>
     <template #icon>
-      <!-- <SupportIcon /> -->
+      <UpIcon />
+    </template>
+    <template #heading>NassauFootprints</template>
+    This is the latest project that I'm currently working on which is a mobile built with React Native for helping tourists find their way around Nassau, Bahamas
+    <span class="text-purple-700 dark:text-green-300">Not sure about the name though 😉</span>
+  </WelcomeItem>
+  <!-- <WelcomeItem>
+    <template #icon>
       <UpIcon />
     </template>
     <template #heading>DekhoBai</template>
     This is the latest idea that I'm currently working on which is a Hyperlocal Online Garage Sale with a bidding system
     <span class="text-purple-700 dark:text-green-300">Not sure about the name though 😉</span>
-  </WelcomeItem>
+  </WelcomeItem> -->
 </template>
