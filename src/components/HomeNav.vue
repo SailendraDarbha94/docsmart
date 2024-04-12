@@ -1,5 +1,29 @@
 <script setup lang="ts">
 import HelloWorld from './HelloWorld.vue'
+import IconGithub from './icons/IconGithub.vue'
+import IconTwitter from './icons/IconTwitter.vue'
+import IconLinked from './icons/IconLinked.vue'
+import { useRouter } from 'vue-router';
+const router = useRouter();
+const routeTo = (path: string) => {
+  console.log(path)
+  // write a function using switch case that uses router.push(path) to navigate to the respective path
+  switch (path) {
+    case 'github':
+      window.open('https://github.com/SailendraDarbha94', '_blank')
+      break
+    case 'linked':
+      window.open('https://www.linkedin.com/in/sailendra-darbha', '_blank')
+      break
+    case 'twitter':
+      router.push('/blah')
+      //window.open('https://github.com/SailendraDarbha94', '_blank')
+      break
+    default:
+      break
+    // router.push(path)
+  }
+}
 </script>
 <template>
   <header class="h-full pl-8 py-4">
@@ -7,14 +31,20 @@ import HelloWorld from './HelloWorld.vue'
 
     <div class="">
       <HelloWorld msg="Dr. Sailendra Darbha" />
-
-      <nav>
+      <div class="flex w-full p-2 mt-4 justify-evenly items-center bg-slate-200 rounded-lg">
+        <IconGithub @github="() => routeTo('github')" />
+        <IconLinked @linked="() => routeTo('linked')" />
+        <IconTwitter @twitter="() => routeTo('twitter')" />
+      </div>
+      <nav class="flex justify-center items-center min-h-10">
         <!-- <RouterLink to="/">Home</RouterLink> -->
-        <a @click="$emit('home')">Home</a>
-        <a @click="$emit('projects')">Projects</a>
+        <a @click="$emit('home')" class="text-black text-lg dark:text-green-500">Home</a>
+        <a @click="$emit('projects')" class="text-black text-lg dark:text-green-500">Projects</a>
         <!-- <RouterLink to="/projects">Projects</RouterLink> -->
-        <RouterLink to="/certificates">Certificates</RouterLink>
-        <RouterLink to="/blog">Blog</RouterLink>
+        <RouterLink to="/certificates" class="text-black text-lg dark:text-green-500"
+          >Certificates</RouterLink
+        >
+        <RouterLink to="/blog" class="text-black text-lg dark:text-green-500">Blog</RouterLink>
       </nav>
     </div>
   </header>
@@ -61,10 +91,10 @@ nav a:first-of-type {
   border: 0;
 }
 header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+  display: flex;
+  place-items: center;
+  padding-right: calc(var(--section-gap) / 2);
+}
 
 @media (min-width: 1024px) {
   header {
