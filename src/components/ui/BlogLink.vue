@@ -14,9 +14,9 @@ const navigateToUrl = (url: string) => {
 </script>
 
 <template>
-    <div class="flex bg-red-200 m-2 p-2 rounded-xl border-2 hover:border-black hover:shadow-xl hover:cursor-pointer" @click="() => navigateToUrl(link)">
+    <div class="flex bg-red-200 dark:bg-yellow-200 m-2 p-2 dark:border-black rounded-xl border-2 hover:border-black hover:shadow-xl hover:cursor-pointer" @click="() => navigateToUrl(link)">
         <IconPointer />
-        {{ link }}
+        {{ title }}
     </div>
 </template>
 

@@ -54,7 +54,7 @@ import PointerIcon from './icons/IconPointer.vue'
 
     Twas about time I went back to my old college and finish what I'd left halfway through, cause
     I'm not a quitter (<span class="dark:text-green-300 text-purple-700"
-      >is what I tell myself when it was mostly my mom's nagging that made me do it</span
+      >is what I tell myself when it was mostly my mom's nagging that made me finish my degree</span
     >)
     <!-- <a href="https://pinia.vuejs.org/" target="_blank" rel="noopener">Pinia</a> -->
   </WelcomeItem>

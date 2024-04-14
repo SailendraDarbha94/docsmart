@@ -22,6 +22,14 @@ const router = createRouter({
       component: () => import('../views/BlogView.vue')
     },
     {
+      path: '/mc-donalds-shall-not-pass',
+      name: 'mcd',
+      components: {
+        default: () => import('../views/MCDBlogView.vue'),
+        sidebar: () => import('../components/HomeNav.vue')
+      }
+    },
+    {
       path: "/:pathMatch(.*)*",
       name: "not-found",
       component: () => import("../views/NotFound.vue"),
