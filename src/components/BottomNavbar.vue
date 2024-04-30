@@ -1,6 +1,5 @@
 <script setup lang="ts">
-import IconPointer from '@/components/icons/IconPointer.vue'
-import IconThree from '@/components/icons/IconThree.vue'
+import IconMenu from '@/components/icons/IconMenu.vue'
 import { ref } from 'vue'
 import { useRouter } from 'vue-router'
 
@@ -8,7 +7,7 @@ const navbar = ref('h-14')
 const toggleText = ref('Expand')
 const toggleNavbar = () => {
   navbar.value = navbar.value === 'h-14' ? 'h-64' : 'h-14'
-  toggleText.value = toggleText.value === 'Expand' ? 'Collapse' : 'Expand'
+  toggleText.value = toggleText.value === 'Expand' ? 'Close' : 'Expand'
 }
 
 const router = useRouter()
@@ -16,17 +15,17 @@ const router = useRouter()
 
 <template>
   <div
-    class="bg-teal-400 fixed bottom-0 left-0 w-full transition-height duration-300 md:hidden"
+    class="bg-slate-400 text-black fixed bottom-0 left-0 w-full transition-height duration-300 md:hidden"
     :class="navbar"
   >
     <span
-      class="w-[98%] h-10 my-2 flex justify-center items-center font-semibold text-xl hover:cursor-pointer mx-auto bg-teal-300 rounded-lg"
+      class="w-[98%] h-10 my-2 flex justify-center items-center font-semibold text-xl hover:cursor-pointer mx-auto bg-slate-300 rounded-lg"
       @click="toggleNavbar"
     >
-      {{ toggleText }}
+      <IconMenu class="mx-2" v-if="toggleText === 'Expand'" /> {{ toggleText }}
     </span>
     <span
-      class="w-[98%] h-10 my-2 flex justify-center items-center font-semibold text-xl hover:cursor-pointer mx-auto bg-teal-300 rounded-lg"
+      class="w-[98%] h-10 my-2 flex justify-center items-center font-semibold text-xl hover:cursor-pointer mx-auto bg-slate-300 rounded-lg"
       @click="
         () => {
           router.push('/'), toggleNavbar()
@@ -35,7 +34,7 @@ const router = useRouter()
       >Dr. Developer
     </span>
     <span
-      class="w-[98%] h-10 my-2 flex justify-center items-center font-semibold text-xl hover:cursor-pointer mx-auto bg-teal-300 rounded-lg"
+      class="w-[98%] h-10 my-2 flex justify-center items-center font-semibold text-xl hover:cursor-pointer mx-auto bg-slate-300 rounded-lg"
       @click="
         () => {
           router.push('/blog'), toggleNavbar()
@@ -45,7 +44,7 @@ const router = useRouter()
       Blog
     </span>
     <span
-      class="w-[98%] h-10 my-2 flex justify-center items-center font-semibold text-xl hover:cursor-pointer mx-auto bg-teal-300 rounded-lg"
+      class="w-[98%] h-10 my-2 flex justify-center items-center font-semibold text-xl hover:cursor-pointer mx-auto bg-slate-300 rounded-lg"
       @click="
         () => {
           router.push('/mc-donalds-shall-not-pass'), toggleNavbar()
