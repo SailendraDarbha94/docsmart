@@ -6,13 +6,13 @@ import BlogLink from '@/components/ui/BlogLink.vue'
 <template>
   <div class="flex flex-wrap w-screen h-full">
     <div
-      class="hidden md:block w-3/12 bg-slate-200 dark:bg-transparent dark:border-slate-200 dark:border-2 m-2 rounded-2xl shadow-2xl"
+      class="hidden lg:block w-3/12 bg-slate-200 dark:bg-transparent dark:border-slate-200 dark:border-2 m-2 rounded-2xl shadow-2xl"
     >
       <h1 class="text-center mt-4 font-semibold text-3xl dark:text-slate-200">Blog</h1>
       <BlogLink link="/" title="Dr Developer" />
       <BlogLink link="/mc-donalds-shall-not-pass" title="Enshittification of McDonalds" />
     </div>
-    <div class=" w-full md:w-8/12 mx-auto mt-2">
+    <div class=" w-full md:w-8/12 mx-auto mt-4 mb-24">
       <h1 class="p-2 my-6 font-semibold text-3xl text-center underline">
         Why write a blog in the age of ChatGPT ?
       </h1>

@@ -22,7 +22,7 @@ const showProjects = async () => {
     <div class="w-full md:w-1/2">
       <HomeNav @home="showHome" @projects="showProjects" />
     </div>
-      <div v-if="home" class="w-full md:w-1/2 mr-4">
+      <div v-if="home" class="w-full md:w-1/2">
         <TheWelcome />
       </div>
       <div v-if="projects" class="w-full md:w-1/2">

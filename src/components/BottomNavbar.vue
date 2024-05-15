@@ -15,7 +15,7 @@ const router = useRouter()
 
 <template>
   <div
-    class="bg-slate-400 text-black fixed bottom-0 left-0 w-full transition-height duration-300 md:hidden"
+    class="bg-slate-400 text-black fixed bottom-0 left-0 w-full transition-height duration-300 lg:hidden"
     :class="navbar"
   >
     <span

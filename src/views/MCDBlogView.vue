@@ -5,9 +5,9 @@ import BottomNavbar from '@/components/BottomNavbar.vue'
 </script>
 
 <template>
-  <div class="flex flex-wrap w-screen h-full mb-10">
+  <div class="flex flex-wrap w-screen h-full mb-24">
     <div
-      class="hidden md:block w-3/12 bg-slate-200 dark:bg-transparent dark:border-slate-200 dark:border-2 m-2 rounded-2xl shadow-2xl"
+      class="hidden lg:block w-3/12 bg-slate-200 dark:bg-transparent dark:border-slate-200 dark:border-2 m-2 rounded-2xl shadow-2xl"
     >
       <h1 class="text-center mt-4 font-semibold text-3xl dark:text-slate-200">Blog</h1>
       <BlogLink link="/" title="Dr Developer" />
@@ -15,7 +15,7 @@ import BottomNavbar from '@/components/BottomNavbar.vue'
       <BlogLink link="/mc-donalds-shall-not-pass" title="Enshittification of McDonalds" />
     </div>
     <div class="w-full md:w-8/12 mx-auto mt-2 mb-14">
-      <h1 class="p-4 md:p-2 font-semibold text-3xl text-center rounded-md">
+      <h1 class="p-2 my-6 font-semibold text-3xl text-center rounded-md">
         McDonalds has been <span class="inline underline font-bold">Enshittified</span>!
       </h1>
       <p class="bg-slate-200 p-4 text-center rounded-md dark:bg-slate-600">
