@@ -68,8 +68,8 @@ import CameraIcon from './icons/IconCamera.vue'
       <UpIcon />
     </template>
     <template #heading>NassauFootprints</template>
-    This is the latest project that I'm currently working on which is a mobile built with React Native for helping tourists find their way around Nassau, Bahamas
-    <span class="text-purple-700 dark:text-green-300">Not sure about the name though 😉</span>
+    This is the latest project that I'm currently working on which is a mobile app built with React Native for helping tourists find their way around Nassau, Bahamas
+    <span class="text-purple-700 dark:text-green-300">Not sure about the name though 😅</span>
   </WelcomeItem>
   <!-- <WelcomeItem>
     <template #icon>

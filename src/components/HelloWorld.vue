@@ -37,11 +37,11 @@ const quotesFunction = async () => {
 </script>
 
 <template>
-  <div class="w-full">
-    <h1 class="dark:text-green-300 text-purple-500">{{ msg }}</h1>
+  <div class="px-4 pt-10 pb-6">
+    <h1 class="dark:text-green-300 text-purple-500 text-4xl">{{ msg }}</h1>
     <h4 class="font-semibold text-pretty">
-      You’ve stumbled upon the humble abode of a self-taught developer who also happens to be a
-      Dentist, I've been a curious person for as long as I can remember, always trying to soak up
+      You&apos;ve stumbled upon the humble abode of a self-taught developer who also happens to be a
+      Dentist, I&apos;ve been a curious person for as long as I can remember, always trying to soak up
       knowledge as much as I can, on this wonderfully amazing and incredibly unfair 
       journey that we call Life, which I believe is both the
       means and an end in itself
@@ -59,7 +59,6 @@ const quotesFunction = async () => {
 <style scoped>
 h1 {
   font-weight: 500;
-  font-size: 2.6rem;
   position: relative;
   top: -10px;
 }

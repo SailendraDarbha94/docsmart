@@ -21,7 +21,7 @@ import BlogLink from '@/components/ui/BlogLink.vue'
         Intelligence was obscure from general public and was only known to a few. The release of
         ChatGPT changed that. It was the first time that a general purpose AI was released, well not
         exactly the first but as Steve Jobs would say, "The first one that just works". The AI was
-        able to generate almost human-like text in any style you wanted Ganster or Rapper, usually
+        able to generate almost human-like text in any style you wanted Gangster or Rapper, usually
         both.
       </section>
       <p class="text-lg italic text-center font-light w-full my-4 p-4">

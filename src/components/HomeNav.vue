@@ -26,17 +26,17 @@ const routeTo = (path: string) => {
 }
 </script>
 <template>
-  <header class="h-full pl-8 py-4">
+  <header class="h-full">
     <!-- <img alt="Vue logo" class="logo rounded-full" src="@/assets/dentist.png" width="125" height="125" /> -->
 
     <div class="">
       <HelloWorld msg="Dr. Sailendra Darbha" />
-      <div class="flex w-full p-2 mt-4 justify-evenly items-center bg-slate-200 rounded-lg">
+      <div class="flex max-w-full p-2 mt-4 justify-evenly items-center bg-slate-200 w-[90%] mx-auto rounded-lg">
         <IconGithub @github="() => routeTo('github')" />
         <IconLinked @linked="() => routeTo('linked')" />
         <IconTwitter @twitter="() => routeTo('twitter')" />
       </div>
-      <nav class="flex justify-center items-center min-h-10">
+      <nav class="flex justify-center items-center min-h-10 mx-auto">
         <!-- <RouterLink to="/">Home</RouterLink> -->
         <a @click="$emit('home')" class="text-black text-lg dark:text-green-500">Home</a>
         <a @click="$emit('projects')" class="text-black text-lg dark:text-green-500">Projects</a>
@@ -67,7 +67,8 @@ header {
 }
 
 nav {
-  width: 100%;
+  /* width: 100%; */
+  width: 90%;
   font-size: 12px;
   text-align: center;
   margin-top: 2rem;

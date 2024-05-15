@@ -5,7 +5,7 @@ import BottomNavbar from '@/components/BottomNavbar.vue'
 </script>
 
 <template>
-  <div class="flex flex-wrap w-screen h-full">
+  <div class="flex flex-wrap w-screen h-full mb-10">
     <div
       class="hidden md:block w-3/12 bg-slate-200 dark:bg-transparent dark:border-slate-200 dark:border-2 m-2 rounded-2xl shadow-2xl"
     >
@@ -14,11 +14,11 @@ import BottomNavbar from '@/components/BottomNavbar.vue'
       <BlogLink link="/blog" title="Blog" />
       <BlogLink link="/mc-donalds-shall-not-pass" title="Enshittification of McDonalds" />
     </div>
-    <div class="w-full md:w-8/12 mx-auto mt-2">
+    <div class="w-full md:w-8/12 mx-auto mt-2 mb-14">
       <h1 class="p-4 md:p-2 font-semibold text-3xl text-center rounded-md">
         McDonalds has been <span class="inline underline font-bold">Enshittified</span>!
       </h1>
-      <p class="bg-slate-200 p-4 text-center rounded-md">
+      <p class="bg-slate-200 p-4 text-center rounded-md dark:bg-slate-600">
         If you&apos;re left wondering what the heck that even means then I implore you to watch
         <a
           href="https://youtu.be/wVYG1mu8Lg8?si=KJ7Gom74lF8_vFK-"
@@ -36,7 +36,7 @@ import BottomNavbar from '@/components/BottomNavbar.vue'
         and I assure you it will ring true to you.
       </p>
       <section class="text-lg p-4 md:p-2 text-justify">
-        They first time I ever tried a McDonalds burger was way back in 2008, I was in school at
+        The first time I ever tried a McDonalds burger was way back in 2008, I was in school at
         that time and had finally gotten the 20 rupees I had been pestering mom for weeks to eat the
         new McAlooTikki burger
         <span class="text-md text-blue-700 leading-3 dark:text-green-300"
@@ -46,7 +46,7 @@ import BottomNavbar from '@/components/BottomNavbar.vue'
         handed over the 20 rupees note and ordered a McAlooTikki burger, the waiter was courteous
         and handed me the burger with a smile. I ate it and since it was the first ever burger I had
         eaten, I loved it. The McDonalds tagline of
-        <span class="bg-red-500 block max-w-fit text-yellow-300 font-semibold rounded-md px-2 py-1"
+        <span class="bg-red-500 inline-block max-w-fit text-yellow-300 font-semibold rounded-md px-2 py-1"
           >I'm Lovin It</span
         >
         became true for me then and for many years to come. After college, it became kind of a habit
@@ -83,7 +83,7 @@ import BottomNavbar from '@/components/BottomNavbar.vue'
         The UI is not intuitive, the UX is not user friendly, the onscreen lag is akin to a
         resistive touchscreen smartphone back when they were first released in 2000s. The experience
         was so annoying that I knew I had to take my pedantic brother there and record his
-        experience, he was flabberghasted to say the least. You can see his ordering experience in a
+        experience, he was flabbergasted to say the least. You can see his ordering experience in a
         short video at the end if you&apos;re interested.
       </section>
       <section class="text-lg p-4 md:p-2 text-justify">
@@ -115,7 +115,7 @@ import BottomNavbar from '@/components/BottomNavbar.vue'
         sub-par to say the least, I realised that I had been holding onto something that was gone a
         long time ago. So it is with no pleasure that I hereby declare that I shall not be going to
         McDonalds anymore and
-        <span class="bg-red-500 block max-w-fit text-yellow-300 font-semibold rounded-md px-2 py-1"
+        <span class="bg-red-500 inline-block max-w-fit text-yellow-300 font-semibold rounded-md px-2 py-1"
           >I'm Vowin It</span
         >
       </section>
