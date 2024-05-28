@@ -93,7 +93,8 @@ import PointerIcon from './icons/IconPointer.vue'
       class="dark:text-yellow-300 text-blue-700 hover:bg-transparent"
       >BlinkIT</a
     >
-    it is a kind of overwhelming that I can't describe here. What I can say is that
-    <span class="dark:text-green-300 text-purple-700">I feel ready for the third one 😉</span>
+    it is a kind of overwhelming that I can't describe here
+    <!-- . What I can say is that
+    <span class="dark:text-green-300 text-purple-700">I feel ready for the third one 😉</span> -->
   </WelcomeItem>
 </template>
