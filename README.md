@@ -1,3 +1,5 @@
+fix readmede
+
 # ./needs to be revamped tomorrow
 23/3/2024... deploy 
 26/4/24 fix asap
