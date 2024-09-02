@@ -1,46 +1,24 @@
-fix readmede
+# Dr. Sailendra Darbha
 
-# ./needs to be revamped tomorrow
-23/3/2024... deploy 
-26/4/24 fix asap
-now change the readme to add tasks
-9/5. deploy tomoorow
-committ tomoroow 25 deploy for sure
-This template should help get you started developing with Vue 3 in Vite.
-i need to get my life straight
+    This is the source code for the portfolio website hosted on sailendradarbha.fyi domain
+
 ## Recommended IDE Setup
-change this readme tomorrow
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur) + [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin).
-ken rocks
-## Type Support for `.vue` Imports in TS
-random
-edit readme and publish new blog
 
-update the whole readme
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [TypeScript Vue Plugin (Volar)](https://marketplace.visualstudio.com/items?itemName=Vue.vscode-typescript-vue-plugin) to make the TypeScript language service aware of `.vue` types.
+    To view and run this website locally on your machine, the prerequisites are Node.Js 18 or above, a text editor of your choice (Visual Studio Code recommended)
 
-If the standalone TypeScript plugin doesn't feel fast enough to you, Volar has also implemented a [Take Over Mode](https://github.com/johnsoncodehk/volar/discussions/471#discussioncomment-1361669) that is more performant. You can enable it by the following steps:
+## Setup
 
-1. Disable the built-in TypeScript Extension
-    1) Run `Extensions: Show Built-in Extensions` from VSCode's command palette
-    2) Find `TypeScript and JavaScript Language Features`, right click and select `Disable (Workspace)`
-2. Reload the VSCode window by running `Developer: Reload Window` from the command palette.
+    Git Clone the repository URL and then navigate into the repository in your local machine via Terminal
 
-## Customize configuration
-
-See [Vite Configuration Reference](https://vitejs.dev/config/).
-
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
+    once inside the folder run 
+    ```sh
+    npm install
+    ```
+    once installation is finished use this command 
+    ```sh
+    npm run dev
+    ```
+    to run the local web-server and then your website will be visible locally on http://localhost:5173/, but if that port is occupied it will be hosted on 5174
 
 ### Type-Check, Compile and Minify for Production
 
