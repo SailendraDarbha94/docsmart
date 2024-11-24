@@ -1,5 +1,5 @@
 # Portfolio website Dr. Sailendra Darbha
-
+redo with angularjs1
     This is the source code for the portfolio website hosted on sailendradarbha.fyi domain
 
 ## Recommended IDE Setup
