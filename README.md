@@ -1,7 +1,7 @@
 # Portfolio website Dr. Sailendra Darbha
 redo with angularjs1
     This is the source code for the portfolio website hosted on sailendradarbha.fyi domain
-im feeling doomed
+im feeling doomed need to get my ass to work
 ## Recommended IDE Setup
 
     To view and run this website locally on your machine, the prerequisites are Node.Js 18 or above, a text editor of your choice (Visual Studio Code recommended)
