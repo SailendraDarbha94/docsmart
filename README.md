@@ -5,7 +5,7 @@ im feeling doomed need to get my ass to work
 ## Recommended IDE Setup
 its a new year and yayyyy
     To view and run this website locally on your machine, the prerequisites are Node.Js 18 or above, a text editor of your choice (Visual Studio Code recommended)
-
+come on get motivatedddd pleaseeee
 ## Setup
 
     Git Clone the repository URL and then navigate into the repository in your local machine via Terminal
