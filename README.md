@@ -4,6 +4,9 @@ redo with angularjs1 moticatjon needef
 im feeling doomed need to get my ass to work
 ## Recommended IDE Setup
 
+
+some days are just
+
 tomorroww
 its a new year and yayyyy ive done nothing for three days
     To view and run this website locally on your machine, the prerequisites are Node.Js 18 or above, a text editor of your choice (Visual Studio Code recommended)
