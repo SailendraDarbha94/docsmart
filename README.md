@@ -5,7 +5,7 @@ im feeling doomed need to get my ass to work
 ## Recommended IDE Setup
 
 
-some days are just
+some days are just too overwhelming
 
 tomorroww
 its a new year and yayyyy ive done nothing for three days
