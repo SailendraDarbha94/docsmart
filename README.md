@@ -4,7 +4,7 @@ redo with angularjs1 moticatjon needef
 im feeling doomed need to get my ass to work
 ## Recommended IDE Setup
 
-
+im wasting my time so muchh
 some days are just too overwhelming
 
 tomorroww
