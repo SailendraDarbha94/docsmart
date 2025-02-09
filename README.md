@@ -1,7 +1,7 @@
 # Portfolio website Dr. Sailendra Darbha
 redo with angularjs1 moticatjon needef
     This is the source code for the portfolio website hosted on sailendradarbha.fyi domain
-im feeling doomed need to get my ass to work
+from Timor route i  work
 ## Recommended IDE Setup
 muchataku mudo saari pleaseeeee i want to codeeee
 im wasting my time so muchh
